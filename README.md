@@ -1,30 +1,32 @@
-[![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](https://www.docker.com/)  
-[![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)](https://nodejs.org/)  
-[![MongoDB](https://img.shields.io/badge/MongoDB-Database-success?logo=mongodb)](https://www.mongodb.com/)  
-[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://react.dev/)  
-[![License](https://img.shields.io/badge/License-MIT-lightgrey)](./LICENSE)  
+<p align="center" style="white-space: nowrap; display: inline-block;">
+  <img src="https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-18.x-green?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-success?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" />
+</p>
 
-# 💸 Finance Visualizer
+# Finance Visualizer
 
 A modern personal expense tracker built with React + TypeScript (frontend) and Express + MongoDB (backend).
 It helps users add, view, and analyze transactions with a clean dashboard UI, category charts, and monthly spending trends.
 
 
-## 🚀 Features
+## Features
 
-- 📊 Dashboard with charts (category-wise & monthly trends)
+- Dashboard with charts (category-wise & monthly trends)
 
-- 📝 Transaction Management (Add, View, List)
+- Transaction Management (Add, View, List)
 
-- ⚡ REST API with Express + MongoDB
+- REST API with Express + MongoDB
 
-- 🎨 Modern UI with Tailwind CSS
+- Modern UI with Tailwind CSS
 
-- 🐳 Dockerized Setup for easy deployment
+- Dockerized Setup for easy deployment
 
-- 🔗 Fully integrated using docker-compose (Frontend + Backend + MongoDB)
+- Fully integrated using docker-compose (Frontend + Backend + MongoDB)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Frontend → React, TypeScript, Tailwind CSS, Vite
 
@@ -34,7 +36,7 @@ It helps users add, view, and analyze transactions with a clean dashboard UI, ca
 
 - Deployment → Docker & docker-compose
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 ├── api/                  # Backend (Express + MongoDB)
 │   ├── config/           # DB connection
@@ -54,52 +56,52 @@ It helps users add, view, and analyze transactions with a clean dashboard UI, ca
 ├── docker-compose.yaml   # Runs frontend + backend + MongoDB
 └── README.md
 ```
-## 1) 🐳 Run with Docker
-#### 1️⃣ Clone the repo
+## 1) Run with Docker
+#### Clone the repo
 ```
 git clone https://github.com/ashankgupta/finance-visualizer.git
 cd finance-visualizer
 ```
-#### 2️⃣ Start all services (frontend + backend + db)
+#### Start all services (frontend + backend + db)
 ```
 docker-compose up --build
 ```
-#### 3️⃣ Access the app
+#### Access the app
 
-- 🌐 Frontend → http://localhost:5173
+- Frontend → http://localhost:5173
 
-- ⚙️ Backend API → http://localhost:3001/api
+- Backend API → http://localhost:3001/api
 
-- 🗄️ MongoDB → mongodb://localhost:27017/finance
+- MongoDB → mongodb://localhost:27017/finance
 
-## 2) 🚀 Running Without Docker
+## 2) Running Without Docker
 
-#### 1️⃣ Backend (API)
+#### Backend (API)
 ```
 cd api
 npm install
 npm start
 ```
 By default backend will be on:
-👉 http://localhost:3001
+http://localhost:3001
 
-#### 2️⃣ Frontend (Client)
+#### Frontend (Client)
 ```
 cd client
 npm install
 npm run dev
 ```
 By default frontend will be on:
-👉 http://localhost:5173
+http://localhost:5173
 
-#### 3️⃣ MongoDB Setup
+#### MongoDB Setup
 Install MongoDB locally and create a new database (e.g. expense_db).
 Inside the api/ folder, create a .env file and add the following:
 ```
 MONGO_URI=mongodb://localhost:27017/expense_db
 ```
 
-## ⚡ API Routes
+## API Routes
 
 ```
 Method	Endpoint	            Description
@@ -107,7 +109,7 @@ POST	/api/transactions	    Add a new transaction
 GET	    /api/transactions	    Get all transactions
 DELETE	/api/transactions/:id   Delete a Transaction
 ```
-## 🤝 Contributing
+## Contributing
 
 - Fork this repo
 
@@ -115,8 +117,8 @@ DELETE	/api/transactions/:id   Delete a Transaction
 
 - Commit & push your changes
 
-- Open a Pull Request 🚀
+- Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License.
